@@ -9,8 +9,12 @@ import {
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
 import "./Auth.css";
+import { useDispatch } from "react-redux";
+import { register } from "@/Redux/Auth/Action";
 
 const SignUp = () => {
+  const dispatch=useDispatch();
+
   const form = useForm({
     defaultValues: {
       email: "",
@@ -20,6 +24,7 @@ const SignUp = () => {
   });
 
   const onSubmit = (data) => {
+    dispatch(register(data))
     console.log("Sign Up Data:", data);
   };
 

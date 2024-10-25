@@ -9,7 +9,8 @@ import Auth from './pages/Auth/Auth'; // Auth sahifasini import qilish
 
 function App() {
   // Autentifikatsiya holatini tekshiradigan o'zgaruvchi
-  const isAuthenticated = false; // Bu holatni haqiqiy autentifikatsiya holati bilan almashtiring
+  const isAuthenticated = true
+  ; // Bu holatni haqiqiy autentifikatsiya holati bilan almashtiring
 
   return (
     <>

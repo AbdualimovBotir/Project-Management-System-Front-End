@@ -19,5 +19,5 @@ const rootReducer = combineReducers({
 
 export const store = createStore(
   rootReducer,
-  applyMiddleware(thunk.default) // Access named export if needed
+  applyMiddleware(thunk) 
 );
